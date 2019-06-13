@@ -1,0 +1,37 @@
+{
+  "name": "invillia-test-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -w src --exec \"babel-node src\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henryaraujo/invillia-test-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henryaraujo/invillia-test-node/issues"
+  },
+  "homepage": "https://github.com/henryaraujo/invillia-test-node#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.3.2",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/preset-env": "^7.4.5",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "koa": "^2.7.0",
+    "koa-jwt": "^3.5.1",
+    "koa-router": "^7.4.0",
+    "nedb": "^1.8.0"
+  }
+}
