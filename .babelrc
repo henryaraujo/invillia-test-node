@@ -9,6 +9,7 @@
     "plugins": [
         ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
         "@babel/plugin-proposal-optional-chaining",
-        "@babel/plugin-transform-arrow-functions"
+        "@babel/plugin-transform-arrow-functions",
+        "@babel/plugin-transform-runtime"
     ]    
 }

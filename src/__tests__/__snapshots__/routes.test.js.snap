@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`POST /auth/signin expect token user 1`] = `
+"{
+  \\"token\\": \\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSGVucmlxdWUgQXJhdWpvIiwiZW1haWwiOiJoZW5yeWFyYXVqb0BlbWFpbC5jb20iLCJfaWQiOiJMNUc1Y050Yld1UGtSRHlmIiwiaWF0IjoxNTYwNTM5NTc5fQ.OP8uRaX5-4T9deF6O3EqCA9H8xDf_cCBXmin4YZCqLc\\"
+}"
+`;
