@@ -40,5 +40,14 @@ export default (name) => {
             })
         },
 
+        remove(data) {
+            return new Promise((resolve, reject) => {
+                db[name].remove(data, (err, doc) => {
+                    if (err) reject(err)
+                    resolve(doc)
+                })
+            })
+        },
+
     }
 }

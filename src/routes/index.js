@@ -3,12 +3,15 @@ import Router from 'koa-router';
 import auth from '../routes/auth';
 import tournament from '../routes/tournaments';
 import player from '../routes/players';
+import phase from '../routes/phases';
 
 const router = new Router()
 
 router.prefix('/v1/api');
-router.use('/auth', auth.routes())
-router.use('/tournaments', tournament.routes())
-router.use('/players', player.routes())
+router
+    .use('/auth', auth.routes())
+    .use('/tournaments', tournament.routes())
+    .use('/players', player.routes())
+    .use('/phases', phase.routes())
 
 export default router

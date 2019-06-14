@@ -7,6 +7,7 @@ players
 .get('/', player.index)
 .get('/:id', player.show)
 .post('/', player.store)
+.delete('/:id', player.remove)
 
 
 export default players;

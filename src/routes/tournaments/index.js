@@ -7,6 +7,7 @@ tournaments
 .get('/', tournament.index)
 .get('/:id', tournament.show)
 .post('/', tournament.store)
+.delete('/:id', tournament.remove)
 
 
 export default tournaments;

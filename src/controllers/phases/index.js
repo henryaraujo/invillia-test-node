@@ -1,38 +1,38 @@
 import model from '../../models/';
 
-const Player = model('players');
+const Phase = model('phases');
 
 const index = async(ctx) => {
-    await Player.all().then(player => {
-      ctx.body = player
+    await Phase.all().then(phase => {
+      ctx.body = phase
     })
 }
 
 const show = async(ctx) => {
     const id = ctx.params.id;
     const payload = {_id: id}
-    await Player.findOne(payload).then(player => {
-        ctx.body = player
+    await Phase.findOne(payload).then(phase => {
+        ctx.body = phase
     })
 }
 
 const store = async(ctx) => {
-    await Player.create(ctx.request.body).then(player => {
-        ctx.body = player
+    await Phase.create(ctx.request.body).then(phase => {
+        ctx.body = phase
     })
-}
+ }
 
 const remove = async(ctx) => {
     const id = ctx.params.id;
     const payload = {_id: id}
-    await Player.remove(payload).then(player => {
-        ctx.body = player
+    await Phase.remove(payload).then(phase => {
+        ctx.body = phase
     })
 }
-
+ 
 export default {
     index,
     show,
     store,
-    remove
+    remove,
 }
