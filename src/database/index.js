@@ -13,4 +13,5 @@ const factory = filename => {
 export default {
     users: factory('users'),
     tournaments: factory('tournaments'),
+    players: factory('players'),
 }
