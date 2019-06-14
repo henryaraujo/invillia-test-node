@@ -42,6 +42,11 @@ Realizar autenticação na rota: `http://localhost:8000/v1/api/auth/signin`
 
 Utilizar o token [JWT](https://jwt.io/) gerado ao realizar autenticação
 
+## Testes
+Os testes da API utilizam o `jest` e podem ser executados pelo comando:
+
+`npm test`
+
 ## Usando Postman
 
 Importar collection [InvilliaTestCollection](https://www.getpostman.com/collections/cd374fead3edc793c231)
