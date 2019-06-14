@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watchAll",
     "dev": "nodemon -w src --exec \"babel-node src\""
   },
   "repository": {
@@ -25,11 +25,17 @@
     "@babel/plugin-proposal-pipeline-operator": "^7.3.2",
     "@babel/plugin-transform-arrow-functions": "^7.2.0",
     "@babel/preset-env": "^7.4.5",
-    "jest": "^24.8.0"
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
+    "dotenv": "^8.0.0",
+    "jsonwebtoken": "^8.5.1",
     "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-json": "^2.0.2",
     "koa-jwt": "^3.5.1",
     "koa-router": "^7.4.0",
     "nedb": "^1.8.0"
