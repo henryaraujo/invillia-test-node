@@ -15,4 +15,5 @@ export default {
     tournaments: factory('tournaments'),
     players: factory('players'),
     phases: factory('phases'),
+    results: factory('results'),
 }
