@@ -5,6 +5,8 @@ const User = model('users');
 
 const store = async(ctx) => {
     const { name, email, password } = ctx.request.body
+    if (!name) ctx.throw(400, 'name required')
+    if (!email) ctx.throw(400, 'email required')
     if (!password) ctx.throw(400, 'password required')
     await User.create(ctx.request.body).then(user => {
         ctx.body = user

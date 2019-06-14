@@ -31,6 +31,8 @@ Para rodar o projeto em sua máquina, execute os seguintes comandos:
 
 `npm start`
 
+Renomear o arquivo `env.sample` para `.env` alterar também o valor do campo `JWT_SECRET` 
+
 > O servidor será iniciado na seguinte URL: `http://localhost:8000/v1/api`
 
 ## Observações
