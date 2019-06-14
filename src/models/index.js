@@ -22,6 +22,15 @@ export default (name) => {
             })
         },
 
+        findOne(data) {
+            return new Promise((resolve, reject) => {
+                db[name].findOne(data, (err, doc) => {
+                    if (err) reject(err)
+                    resolve(doc)
+                })
+            })
+        },
+
         create(data) {
             return new Promise((resolve, reject) => {
                 db[name].insert(data, (err, doc) => {
